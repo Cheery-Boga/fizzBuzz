@@ -1,20 +1,18 @@
-for (var i = 1; i <= 100; i++) {
-	var divisibleBy3 = i % 3 === 0;
-	var divisibleBy5 = i % 5 === 0;
-	if(divisibleBy3 && divisibleBy5){
-		console.log('FizzBuzz');
-	} 
-	else if(divisibleBy3) {
-			console.log('Fizz'); 
-	}
-	else if(divisibleBy5) {
-				console.log('Buzz');
-	}
-	else {
-		console.log(i); 
-	}
+for (i=1; i<101; i++) {  
+let multipleofThree = i % 3 ===0; 
+let multipleOfFive = i % 5 ===0; 
+if(multipleOfFive && multipleofThree) { 
+	document.getElementById('display').innerHTML += 'FizzBuzz' + '<br>';
+	console.log('FizzBuzz')
 }
-			
-		
-	
-
+else if(multipleofThree) {
+	document.getElementById('display').innerHTML += 'Fizz' + '<br>';
+	console.log('Fizz')
+} 
+else if(multipleOfFive) {
+	document.getElementById('display').innerHTML += 'Buzz' + '<br>';
+	console.log('Buzz')
+}
+else{
+	document.getElementById('display').innerHTML += (i) + '<br>'}
+}
